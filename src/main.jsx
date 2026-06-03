@@ -14,6 +14,8 @@ import Contact from "./components/Pages/Contact";
 import Projects from "./components/Pages/Projects";
 
 import NotFound from "./components/Pages/NotFound";
+import Login from "./components/Pages/Login";
+import Signup from "./components/Pages/Signup";
 
 const projects = {
   Harendra: ["Portfolio Website", "Weather App", "GitHub Tracker"],
@@ -124,6 +126,8 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route path="projects" element={<Projects projects={projects} />} />
+      <Route path="Login" element={<Login />} />
+      <Route path="Signup" element={<Signup />} />
       <Route path="*" element={<NotFound />} />
     </Route>,
   ),
